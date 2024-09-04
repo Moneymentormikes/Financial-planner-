@@ -12,12 +12,12 @@ mongoose.connect('mongodb://localhost:27017/financial-planner', {
 });
 
 const GoalSchema = new mongoose.Schema({
-    goalName: String,
-    totalAmount: Number,
-    dailyTarget: Number,
-    weeklyTarget: Number,
-    monthlyTarget: Number,
-    startDate: Date,
+    goalName:String,
+    totalAmount:Number,
+    dailyTarget:Number,
+    weeklyTarget:Number,
+    monthlyTarget:Number,
+    startDate:Date,
 });
 
 const Goal = mongoose.model('Goal', GoalSchema);
