@@ -44,7 +44,7 @@ app.post('/set-goal', async (req, res) => {
     });
 
     await goal.save();
-    res.send({ message: 'Goal set successfully', goal });
+    res.send({ message:'Goal set successfully', goal });
 });
 
 // API to get all goals
