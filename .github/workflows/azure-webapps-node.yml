@@ -8,7 +8,7 @@ app.use(bodyParser.json());
 // Connect to MongoDB
 mongoose.connect('mongodb://localhost:27017/financial-planner', {
     useNewUrlParser:true,
-    useUnifiedTopology: true,
+    useUnifiedTopology:true,
 });
 
 const GoalSchema = new mongoose.Schema({
